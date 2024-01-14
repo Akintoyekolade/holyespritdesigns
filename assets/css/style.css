@@ -270,6 +270,10 @@ header
   line-height: 75px;
 }
 
+.header-area .main-nav .logo img{
+  height: 60px;
+}
+
 .background-header .nav {
   margin-top: 20px !important;
 }
