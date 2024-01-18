@@ -20,7 +20,7 @@
 		 }
 	})
 
-	$('.owl-women-item').owlCarousel({
+	$('.owl-sweatshirt-item').owlCarousel({
 		items:5,
 		loop:true,
 		dots: true,
