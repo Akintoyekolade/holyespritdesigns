@@ -39,7 +39,7 @@
 		 }
 	 })
 
-	$('.owl-kid-item').owlCarousel({
+	$('.owl-tshirt-item').owlCarousel({
 		items:5,
 		loop:true,
 		dots: true,
