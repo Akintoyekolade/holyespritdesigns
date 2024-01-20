@@ -1009,6 +1009,35 @@ Hoodie
   border :1px solid #2a2a2a;
 }
 
+.SOTE-hoodie-image {
+  margin-top: -60px;
+}
+
+.view-all-button {
+  display: block;
+  padding: 8px 24px 8px 24px;
+  border: #191a20 1px solid;
+  margin-top: 32px;
+  color: #191a20;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.view-all-button:hover {
+  background-color: #2a2a2a;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 
 /*
 ---------------------------------------------
