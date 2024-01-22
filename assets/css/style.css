@@ -1624,6 +1624,12 @@ footer {
 
 footer .logo {
   margin-bottom: 20px;
+  margin-right: 32px;
+}
+
+footer .logo img{
+  max-width: 230px;
+  padding: 16px 16px 16px 0;
 }
 
 footer ul li {
