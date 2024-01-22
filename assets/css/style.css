@@ -1689,6 +1689,31 @@ footer .under-footer a:hover {
   color: #c66;
 }
 
+footer .col-lg-3 h4 {
+  margin-bottom: 8px;
+}
+
+
+.footer-contact {
+  margin-top: 16px;
+}
+
+.footer-contact h5 {
+  margin-bottom: 4px;
+  margin-top: 16px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-contact a {
+  text-decoration: none;
+  color: #fff;
+  transition: ease-in-out 0.3s;
+}
+
+.footer-contact a:hover {
+  color: #aaaaaa;
+}
 
 /* 
 ---------------------------------------------
