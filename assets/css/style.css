@@ -1632,6 +1632,26 @@ footer .logo img{
   padding: 16px 16px 16px 0;
 }
 
+
+.social-connect {
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+
+.social-connect  h5{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.social-connect ul {
+  display: flex;
+  width: 120px;
+  justify-content: space-around ;
+  place-self: center;
+}
+
 footer ul li {
   display: block;
   margin-bottom: 10px;
