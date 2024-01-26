@@ -1471,6 +1471,7 @@ Social
 */
 
 #social {
+  display: none;
   margin-top: 90px;
   padding-bottom: 90px;
   border-bottom: 3px dotted #eee;
@@ -1539,6 +1540,11 @@ Subscribe
 
 .subscribe {
   margin-top: 90px;
+}
+
+.subscribe .subscribe-image img{
+  width: 360px;
+  margin-top: -48px;  
 }
 
 .subscribe .section-heading {
@@ -1651,6 +1657,20 @@ footer .logo img{
   justify-content: space-around ;
   place-self: center;
 }
+
+.social-connect .social-code {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  z-index: 1;
+  max-width: 100px;
+  transition: ease-in-out 0.3s;
+}
+
+.social:hover .social-code {
+  display: block;
+} 
 
 footer ul li {
   display: block;
