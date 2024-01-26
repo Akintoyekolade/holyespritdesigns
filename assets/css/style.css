@@ -1009,8 +1009,14 @@ Hoodie
   border :1px solid #2a2a2a;
 }
 
-.SOTE-hoodie-image {
-  margin-top: -60px;
+.hoodie-image-container {
+  height: 290px;
+  background-color: #c66;
+  overflow: hidden;
+}
+
+.hoodie-image-container img {
+  margin-top: -20px;
 }
 
 .view-all-button {
@@ -1547,6 +1553,17 @@ Subscribe
   margin-top: -48px;  
 }
 
+@media (max-width: 992px) and (min-width: 767px) {
+  .subscribe .subscribe-image {
+    display: grid;
+  }
+
+  .subscribe .subscribe-image img {
+    display: grid;
+    justify-self: center;
+  } 
+}
+
 .subscribe .section-heading {
   margin-bottom: 30px;
 }
@@ -1593,6 +1610,14 @@ Subscribe
   color: #2a2a2a;
 }
 
+@media (max-width: 992px) and (min-width: 767px) {
+  .subscribe form button {
+    display: block;
+    width: 100%;
+  }
+}
+
+
 .subscribe ul li {
   margin-bottom: 30px;
   display: block;
@@ -1638,6 +1663,17 @@ footer .logo img{
   padding: 16px 16px 16px 0;
 }
 
+@media (max-width: 767px) { /* Mobile view */
+  footer .logo img{
+    max-width: 230px;
+    padding: 16px 16px 16px 16px;
+  }
+
+  footer .logo {
+    margin-right: 0;
+  }
+  
+}
 
 .social-connect {
   display: grid;
@@ -1654,23 +1690,54 @@ footer .logo img{
 .social-connect ul {
   display: flex;
   width: 120px;
-  justify-content: space-around ;
-  place-self: center;
+  justify-content: space-around;
 }
 
-.social-connect .social-code {
+.tiktok-icon {
+  display: block;
+  color: white;
+}
+
+.social-connect .whatsapp-qr-code-image {
   display: none;
   position: absolute;
   top: 100%;
   left: 50%;
   z-index: 1;
   max-width: 100px;
-  transition: ease-in-out 0.3s;
+  transition: opacity 0.3s ease;
 }
 
-.social:hover .social-code {
+/* Wechat */
+.social-connect .wechat-qr-code-image {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 40%;
+  z-index: 1;
+  max-width: 100px;
+  transition: opacity 0.3s ease;
+}
+
+.social:hover .social-code{
   display: block;
+  opacity: 1;
 } 
+
+@media (max-width: 992px) and (min-width: 767px) { /* Social Connect smaller screens*/
+  .social-connect {
+    display: grid;
+    justify-content: left;
+    margin-bottom: 24px;
+  }
+
+  .social-connect ul {
+    display: flex;
+    width: 120px;
+    justify-content: space-around;
+  }
+  
+}
 
 footer ul li {
   display: block;
