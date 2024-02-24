@@ -633,6 +633,8 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
+  
 }
 
 @media (min-width: 767px) {
@@ -647,6 +649,7 @@ header
     place-content: center;
     justify-content: space-between;  
  }
+
 
   .header-area {    
     border-bottom: 3px dotted #eee;
