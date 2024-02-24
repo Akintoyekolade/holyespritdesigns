@@ -199,6 +199,15 @@ header
 --------------------------------------------- 
 */
 
+/* Define the styles for the mobile navigation */
+.main-nav ul {
+  display: none; /* Initially hide the navigation on mobile */
+}
+
+.main-nav ul.active {
+  display: block; /* Show the navigation when .active class is applied */
+}
+
 .background-header {
   border-bottom: none !important;
   background-color: #fff;

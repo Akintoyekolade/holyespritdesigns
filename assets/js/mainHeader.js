@@ -39,20 +39,16 @@ class MainHeader extends HTMLElement {
     </header>
     `
 
+        // Script for setting active nav item
+        const navLinks = this.querySelectorAll('.nav a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
     }
 }
 
 customElements.define('my-header', MainHeader)
 
-// navigation.js
-
-document.addEventListener("DOMContentLoaded", function() {
-    const currentLocation = location.href;
-    const navLinks = document.querySelectorAll(".nav a");
-
-    navLinks.forEach(link => {
-        if (link.href === currentLocation) {
-            link.classList.add("active");
-        }
-    });
-});
