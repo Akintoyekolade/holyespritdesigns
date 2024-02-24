@@ -24,8 +24,7 @@ class MainHeader extends HTMLElement {
                                 <a href="javascript:;">ABOUT US</a>
                                 <ul>
                                     <li><a href="about.html">OUR MISSION</a></li>                                    
-                                    <li><a href="contact.html">CONTACT US</a></li>                                
-                                    <li class="scroll-to-section"><a href="#mission">MISSION</a></li>
+                                    <li><a href="contact.html">CONTACT US</a></li>
                                 </ul>
                             </li>
                         </ul>        
@@ -40,14 +39,6 @@ class MainHeader extends HTMLElement {
     </header>
     `
 
-        // Script for setting active nav item
-        const navLinks = this.querySelectorAll('.nav a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(link => link.classList.remove('active'));
-                this.classList.add('active');
-            });
-        });
     }
 }
 
