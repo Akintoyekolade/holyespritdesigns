@@ -28,7 +28,7 @@ class MainHeader extends HTMLElement {
                                 </ul>
                             </li>
                         </ul>        
-                        <a class='menu-trigger'>
+                        <a class='menu-trigger' tabindex="-1">
                             <span>Menu</span>
                         </a>
                         <!-- ***** Menu End ***** -->
