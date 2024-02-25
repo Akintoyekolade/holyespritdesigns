@@ -7,14 +7,14 @@ class MainHeader extends HTMLElement {
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             <img src="assets/images/HED - Black.png">
                         </a>
                         <!-- ***** Logo End ***** -->
 
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
-                            <li class="scroll-to-section"><a href="index.html" class="">HOME</a></li>
+                            <li class="scroll-to-section"><a href="/" class="">HOME</a></li>
                             <li class="nav-item"><a href="products.html">SHOP ALL</a></li>
                             <li class="scroll-to-section"><a href="#Hoodie">HOODIES</a></li>
                             <li class="scroll-to-section"><a href="#sweatshirt">SWEATSHIRTS</a></li>
