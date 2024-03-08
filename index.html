@@ -42,7 +42,7 @@
     
     
     <!-- ***** Header Area Start ***** -->
-        <my-header></my-header>
+        <div id="mainHeader"></div>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
@@ -703,6 +703,25 @@
         <main-footer></main-footer>
 
     <!-- ***** Footer Ends ***** -->
+
+    <!-- Header -->
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('mainHeader').innerHTML = data;
+            })
+
+            .then(() => {
+                // Function to toggle the mobile menu
+                const icon = document.querySelector('.icon');
+                const nav = document.querySelector('nav ul');
+
+                icon.addEventListener('click', function() {
+                    nav.classList.toggle('show');
+                });
+            });
+    </script>
     
 
     <!-- jQuery -->
