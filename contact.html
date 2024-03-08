@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/images/HED 1 - Favicon.svg" type="image/HED-icon">
     <script type="module" src="assets/js/footer.js"></script>
-    <script type="module" src="assets/js/mainHeader.js"></script>
     <script type="module" src="assets/js/navigation.js"></script>
     <title>Holy-Esprit Designs - Contact Us</title>
 
@@ -42,7 +41,7 @@
     
     
     <!-- ***** Header Area Start ***** -->
-        <my-header></my-header>
+     <div id="mainHeader"></div>
     <!-- ***** Header Area End ***** -->
 
     <!-- ***** Main Banner Area Start ***** -->
@@ -163,6 +162,25 @@
         <main-footer></main-footer>
 
     <!-- ***** Footer Ends ***** -->
+
+    <!-- Header -->
+    <script>
+      fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('mainHeader').innerHTML = data;
+          })
+
+          .then(() => {
+              // Function to toggle the mobile menu
+              const icon = document.querySelector('.icon');
+              const nav = document.querySelector('nav ul');
+
+              icon.addEventListener('click', function() {
+                  nav.classList.toggle('show');
+              });
+          });
+    </script>
     
 
     <!-- jQuery -->
