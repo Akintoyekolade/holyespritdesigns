@@ -703,6 +703,14 @@
 
     <!-- ***** Footer Ends ***** -->
 
+    <!-- Back to Top -->
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i>Top</button>
+    
+    <!-- Back to Top -->
+
+
+
     <!-- Header -->
     <script>
         fetch('header.html')
@@ -721,6 +729,62 @@
                 });
             });
     </script>
+
+
+    <!-- Back to TOP-->
+
+    <script>
+        // Show the button when the user scrolls down 500px from the top of the document
+        window.onscroll = function() {
+        scrollFunction();
+        };
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+    <!-- Products Tab Section-->
+
+    <script>
+
+        function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        
+        // Hide all tab content
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        
+        // Deactivate all tab links
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        
+        // Show the selected tab content and mark the button as active
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        }
+
+    </script>
+
+
+
+
+
     
 
     <!-- jQuery -->
